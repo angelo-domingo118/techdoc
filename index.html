@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Technical Documentation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/5paNdF+Tm2JsNR6/ibe5SSXf0e16zdi"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <a href="#Getting_Started" class="nav-link">Getting Started</a>
+      <a href="#Variables_and_Operators" class="nav-link"
+        >Variables and Operators</a
+      >
+      <a href="#Data_Types" class="nav-link">Data Types</a>
+      <a href="#Control_Flow" class="nav-link">Control Flow</a>
+      <a href="#Functions" class="nav-link">Functions</a>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Getting_Started" class="main-section">
+        <header>Getting Started</header>
+        <p>
+          Python, a high-level programming language, is known for its clear
+          syntax and code readability. Its vast libraries and frameworks make it
+          a versatile language, suitable for various types of projects including
+          web development, data analysis, machine learning, artificial
+          intelligence, scientific computing, and more.
+        </p>
+
+        <p>
+          Getting started with Python is straightforward. It requires the
+          installation of the Python interpreter, available for download from
+          the official website. Once installed, Python files (.py) can be
+          executed from the command line using the command
+          <code>python filename.py</code>, where "filename.py" is the name of
+          the Python file.
+        </p>
+
+        <p>Here's a simple Python program:</p>
+        <code> print("Hello, World!") </code>
+        <p>
+          When executed, this program will output: <code>Hello, World!</code>
+        </p>
+
+        <p>
+          Python also provides an interactive interpreter, allowing developers
+          to execute Python commands directly in a REPL (Read-Eval-Print Loop)
+          environment, fostering a quicker iterative development process.
+        </p>
+      </section>
+      <section id="Variables_and_Operators" class="main-section">
+        <header>Variables and Operators</header>
+        <p>
+          Variables in Python are used to store data that can be used and
+          manipulated throughout a program. They can hold different types of
+          data like numbers, strings, lists, etc. Variables are created the
+          moment a value is assigned to them. In Python, variables don't need a
+          declaration, which makes it easier to work with.
+        </p>
+
+        <p>
+          Operators, on the other hand, are symbols that are used to perform
+          operations on operands. Python has various operators; these include
+          arithmetic operators like +, -, *, / for addition, subtraction,
+          multiplication, and division respectively; comparison operators like
+          ==, !=, <, >, <=, >= for equality, inequality, less than, greater
+          than, less than or equal to, and greater than or equal to
+          respectively; and logical operators like and, or, not for logical
+          operations.
+        </p>
+
+        <p>
+          Here is an example demonstrating the use of variables and operators in
+          Python:
+        </p>
+        <code>
+          x = 10 y = 20 sum = x + y # Addition <br />
+          difference = x - y # Subtraction <br />
+          product = x * y # Multiplication <br />
+          quotient = x / y # Division
+        </code>
+        <p>
+          The above code snippet demonstrates simple arithmetic operations using
+          variables and operators in Python.
+        </p>
+      </section>
+      <section id="Data_Types" class="main-section">
+        <header>Data Types</header>
+        <p>
+          Python supports a variety of data types, which are categories of data
+          that can be used in various ways. The fundamental data types in Python
+          include integers, floats, strings, and booleans. Besides, Python
+          provides composite data types like lists, tuples, sets, and
+          dictionaries which allow you to store collections of items.
+        </p>
+
+        <p>Here is a brief overview of these data types:</p>
+        <ul>
+          <li>
+            <strong>Integers:</strong> These are whole numbers without a decimal
+            point, e.g., -10, 0, 100.
+          </li>
+          <li>
+            <strong>Floats:</strong> These are numbers that have a decimal
+            point, e.g., -10.1, 0.0, 100.5.
+          </li>
+          <li>
+            <strong>Strings:</strong> These are sequences of characters enclosed
+            in single, double, or triple quotes, e.g., 'hello', "world",
+            '''Python'''.
+          </li>
+          <li>
+            <strong>Booleans:</strong> These are true or false values, often
+            used to control the flow of a program with conditional statements.
+          </li>
+          <li>
+            <strong>Lists:</strong> These are ordered collections of items,
+            which can be of any type, and are mutable, e.g., [1, 2, 3], ['a',
+            'b', 'c'].
+          </li>
+          <li>
+            <strong>Tuples:</strong> These are like lists, but are immutable,
+            e.g., (1, 2, 3).
+          </li>
+          <li>
+            <strong>Sets:</strong> These are unordered collections of unique
+            items, e.g., {1, 2, 3}.
+          </li>
+          <li>
+            <strong>Dictionaries:</strong> These are unordered collections of
+            key-value pairs, e.g., {'key1': 'value1', 'key2': 'value2'}.
+          </li>
+        </ul>
+
+        <p>
+          Understanding these data types and how to work with them is
+          foundational to programming in Python. They provide the building
+          blocks upon which more complex operations and data structures can be
+          built.
+        </p>
+      </section>
+      <section id="Control_Flow" class="main-section">
+        <header>Control Flow</header>
+        <p>
+          Control flow is a fundamental concept in programming that allows
+          developers to dictate the order in which operations are performed in a
+          program. In Python, control flow is managed through the use of
+          conditional statements and loops.
+        </p>
+
+        <p>
+          Conditional statements in Python include <code>if</code>,
+          <code>elif</code> (else if), and <code>else</code>. These statements
+          allow developers to execute certain blocks of code based on whether
+          specified conditions are true or false. Here's a simple example:
+        </p>
+        <code>
+          age = 18 if age >= 18: print("You are an adult.") else: print("You are
+          a minor.")
+        </code>
+        <p>
+          In this code snippet, the <code>print</code> statement to execute
+          depends on the value of the <code>age</code> variable.
+        </p>
+
+        <p>
+          Looping statements in Python include <code>for</code> and
+          <code>while</code> loops. These loops allow developers to execute a
+          block of code repeatedly, as long as a specified condition is met. For
+          instance:
+        </p>
+        <code> for i in range(5): print(i) </code>
+        <p>
+          This <code>for</code> loop will print the numbers 0 through 4 to the
+          console, demonstrating a simple loop in action.
+        </p>
+      </section>
+      <section id="Functions" class="main-section">
+        <header>Functions</header>
+        <p>
+          Functions in Python are used to encapsulate a group of statements that
+          can perform a specific task. Functions can accept input values, known
+          as parameters, and return output values. They provide a way to
+          structure code in a modular fashion, allowing for code reuse and
+          better organization.
+        </p>
+
+        <p>
+          A function in Python is defined using the <code>def</code> keyword,
+          followed by the function name, a pair of parentheses, and a colon. The
+          statements that the function executes are indented under the function
+          definition. Here's a simple example of a function definition and call
+          in Python:
+        </p>
+        <code> def greet(name): print(f"Hello, {name}!") greet("Alice") </code>
+        <p>
+          In this example, a function named <code>greet</code> is defined, which
+          takes one parameter called <code>name</code>. The function prints a
+          greeting message using the provided name. The function is then called
+          with the argument <code>"Alice"</code>, which prints
+          <code>Hello, Alice!</code> to the console.
+        </p>
+
+        <p>
+          Functions can also return values to the caller using the
+          <code>return</code> keyword. When a return statement is executed, the
+          function terminates, and the value specified in the return statement
+          is passed back to the caller. Here's an example:
+        </p>
+        <code> def add(a, b): return a + b sum = add(5, 3) </code>
+        <p>
+          In this example, a function named <code>add</code> is defined, which
+          takes two parameters, <code>a</code> and <code>b</code>. The function
+          returns the sum of these two values. The function is then called with
+          the arguments <code>5</code> and <code>3</code>, and the returned
+          value, <code>8</code>, is assigned to the variable <code>sum</code>.
+        </p>
+
+        <p>
+          Functions in Python can have default parameter values, variable-length
+          arguments, and keyword-only arguments, among other features, making
+          them a flexible and powerful mechanism for structuring and organizing
+          code.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
